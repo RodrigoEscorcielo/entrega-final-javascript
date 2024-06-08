@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,p ,a ,input ,textarea {
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+    background-color: oldlace;
+}
+
+aside{
+    padding: 2rem;
+    padding-right: 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 300;
+    font-size: 2rem;
+    gap: .55rem;
+    color:#374151;
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.botonMenu{
+    background-color: transparent;
+    border: 0;
+    color:#374151;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    font-weight: 300;
+    padding: 1rem;
+    padding-left: 0;
+    align-items: center;
+}
+
+.botonCarrito{
+    background-color: transparent;
+    border: 0;
+    color:#374151;
+    font-size: 1.7rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    font-weight: 300;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+} 
+
+.botonMenu.active{
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding-left: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top: .15rem solid black;
+    border-bottom: .15rem solid black;
+    border-left: .15rem solid black;
+    font-weight: 500;
+}
+
+.textoFooter{
+    color: #374151;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+main {
+    background-color: white;
+    margin: 2rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+    border: .15rem solid black;
+}
+
+.tituloPrincipal {
+    color: black;
+    font-weight: 300;
+    font-size: 10rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: .15rem solid;
+}
+
+.contendorProductos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.productoImagen{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.productoDetalles{
+    border: .15rem solid black;
+    background-color: white;
+    color: black;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.productoTitulo {
+    font-size: 2rem;
+}
+
+.productoAgregar{
+    border: 0;
+    background-color: white;
+    color: black;
+    padding: .55rem;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: background-color .4s, color .2s;
+}
+
+.productoAgregar:hover{
+    background-color: black;
+    color: white;
+}
+
+.productoEliminar{
+    border: 0;
+    background-color: white;
+    color: black;
+    padding: .55rem;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: background-color .4s, color .2s;
+}
+
+.productoEliminar:hover{
+    background-color: black;
+    color: white;
+}
