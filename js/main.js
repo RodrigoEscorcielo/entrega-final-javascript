@@ -235,6 +235,14 @@ function total(){
     return total;
 }
 
+function detalle(){
+    let leyenda = "";
+    arrayCarrito.forEach(el =>{
+        leyenda += `Póster de ${el.tipo}: ${el.nombre} $${el.precio} x(${el.cantidad})\n`;
+    });
+    return leyenda;
+}
+
 function agregarEventoBotones(){
     const botonesDelMenu = document.querySelectorAll(".botonCategoria");
     botonesDelMenu.forEach(boton => {
@@ -273,12 +281,16 @@ boton5.innerHTML = `<i class="bi bi-wallet2"></i><li>Comprar</li>`;
 boton5.className = "botonMenu botonCategoria";
 
 boton5.onclick = () => total();
+boton5.onclick = () => detalle();
 boton5.addEventListener('click', () => {
     const totalValue = total();
+    const detalleValue = detalle();
     if (totalValue != 0){
         swal({
             title: "¿Quiere confirma su compra?",
-            text: `Total a pagar: $${totalValue}`,
+            text: `Detalle: 
+            ${detalleValue}
+            Total: $${totalValue}`,
             icon: "info",
             buttons: true,
             dangerMode: true,

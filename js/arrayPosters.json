@@ -52,7 +52,7 @@
         "id": 8,
         "nombre": "Lamb",
         "imagen": "imagenes/lamb.jpg",
-        "categoria": "Pelicula",
+        "tipo": "Pelicula",
         "precio": 8000
     },
     {
