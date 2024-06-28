@@ -1,8 +1,22 @@
 [
     {
+        "id": 0,
+        "nombre": "Longlegs",
+        "imagen": "imagenes/longlegs.jpg",
+        "tipo": "Película",
+        "precio": 666
+    },
+    {
         "id": 1,
         "nombre": "Hereditary",
         "imagen": "imagenes/hereditary.jpg",
+        "tipo": "Película",
+        "precio": 8000
+    },
+    {
+        "id": 3,
+        "nombre": "The Lobster",
+        "imagen": "imagenes/lobster.jpg",
         "tipo": "Película",
         "precio": 8000
     },
@@ -12,13 +26,6 @@
         "imagen": "imagenes/midsommar.jpg",
         "tipo": "Película",
         "precio": 6000
-    },
-    {
-        "id": 3,
-        "nombre": "The Lobster",
-        "imagen": "imagenes/lobster.jpg",
-        "tipo": "Película",
-        "precio": 8000
     },
     {
         "id": 4,

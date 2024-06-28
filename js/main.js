@@ -320,5 +320,18 @@ menu.appendChild(boton5);
 
 agregarEventoBotones();
 actualizarNumeroCarrito();
+
+document.addEventListener("keyup", e => {
+    if (e.target.matches("#buscador")) {
+        document.querySelectorAll(".producto").forEach(elemento => {
+            elemento.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                ? elemento.classList.remove("filtro") 
+                : elemento.classList.add("filtro");
+                console.log("producto");
+        });
+    }
+});
+
+
 // <-- Fin - Entrega FINAL --> 
 
